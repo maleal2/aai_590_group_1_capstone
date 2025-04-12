@@ -125,4 +125,4 @@ SOFTWARE.
 
 ## Acknowledgments
 
-Special thanks to Professor Roozbeh Sadeghian for his mentorship and support throughout the AAI-590 Capstone. We also acknowledge the broader open-source community, especially Hugging Face and the creators of LoRA and PEFT, whose tools enabled this work.
+Special thanks to Professor Anna Marbut and Roozbeh Sadeghian for their mentorship and support throughout the AAI-590 Capstone. We also acknowledge the broader open-source community, especially Hugging Face and the creators of LoRA and PEFT, whose tools enabled this work.
