@@ -10,7 +10,7 @@ To use this project you can either clone the repo on your device using the comma
 
 git init
 
-git clone https://github.com/J-Lehrer/aai_590_group_1_capstone.git
+git clone https://github.com/maleal2/aai_590_group_1_capstone.git
 
 ## Project Intro/Objective
 
@@ -91,7 +91,9 @@ Custom dataset built through multi-phase cleaning and augmentation:
 ## Model Pipeline
 
 * Base Model: meta-llama/Llama-2-7b-hf
-
+* Intent & Sentiment Classification: BERT models for detecting user emotional states and intents.
+* Retrieval-Augmented Generation (RAG): Semantic context retrieval from Empathetic Dialogues dataset using SentenceTransformers and FAISS.
+  
 * Tuning Strategy:
   * Layers 12–31 selectively fine-tuned
   * LoRA adapters applied to q_proj and v_proj for efficient adaptation
@@ -108,6 +110,10 @@ Custom dataset built through multi-phase cleaning and augmentation:
 * Training run: 8,000 steps
 * Final validation loss: 1.92
 * Training convergence tracked via W&B (loss, gradient norm, learning rate)
+* BERT Classifiers:
+   * Intent accuracy: 87%, precision, recall, F1-score (0.70–1.00)
+   * Sentiment accuracy: 66%, precision, recall, F1-score (0.62–0.70)
+* RAG retrieval tested for semantic relevance and response quality.
 * Echo prevention: qualitative and batch inference testing confirmed improvement over untrained base model
 
 * Final inference behavior tested using:
