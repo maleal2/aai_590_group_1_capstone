@@ -62,6 +62,23 @@ This project leverages and enhances multiple open-source datasets for mental hea
   * EDA revealed that therapist responses averaged 1,035 characters—much longer than user inputs.
   * Boxplots and Pearson correlation were used to examine response length, outliers, and lexical diversity.
 
+* Intent Classification Dataset (Perplexity.ai)
+  * Custom-created using Perplexity.ai specifically tailored for mental health chatbot interactions.
+  * Includes 200 evenly distributed entries across four categories: General Chat & Happy (0), Neutral Intent (1), Help-Seeking & Anxious (2), and Crisis Detected (3).
+  * Stratified splits: Training (70%), Validation (15%), Testing (15%).
+
+* Sentiment Classification Dataset (Google GoEmotions)
+  * Adapted from Google Research’s GoEmotions Dataset (2020).
+  * Condensed from 27 original emotion categories into three sentiment groups: Happy (0), Distressed (1), Neutral (2).
+  * Initially imbalanced (Neutral 40%, Happy 36%, Distressed 24%), balanced through downsampling.
+  * Stratified splits: Training (80%), Validation (10%), Testing (10%).
+
+* Retrieval-Augmented Generation (Empathetic Dialogues)
+  * Facebook’s Empathetic Dialogues dataset available on Hugging Face (2019).
+  * Approximately 76,673 conversational utterances.
+  * Encoded using SentenceTransformer (all-MiniLM-L6-v2; Reimers & Gurevych, 2019).
+  * Embeddings stored in a FAISS vector database for semantic retrieval.
+
 * Happy Bot Enriched Dataset (v4–v8)
 Custom dataset built through multi-phase cleaning and augmentation:
   * Role labeling: Therapist vs. Advisor
