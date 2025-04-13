@@ -2,7 +2,7 @@
 
 This project is a part of the AAI-590  capstone course in the Applied Artificial Intelligence Program at the University of San Diego (USD).
 
---Project Status: [In Progress]
+--Project Status: [Completed]
 
 ## Installation
 
